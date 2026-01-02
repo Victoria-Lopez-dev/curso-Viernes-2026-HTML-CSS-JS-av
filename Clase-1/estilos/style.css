@@ -1,0 +1,54 @@
+/* todo los estilos del sitio....*/
+/* gerarquia -> siempre 'gana' las propiedades definidas en los selectores mas especificos cuando defino una misma propiedad en distintos selectores para la misma etiqeuta
+id>class>etiqueta
+*/
+/*
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor
+}
+*/
+/* (manera de nombrara/hacer referencia a una/varias etiqeutas)selector -> por id| por class| por etiqueta| compuestos | por atributo */
+
+/* selector por etiqueta*/
+
+ul{
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+
+/* selector por id -> #*/
+
+#nombreId{
+    color: #ff66AA;
+}
+/* selector por class -> .*/
+.grupo1{
+    color: darkred;
+}
+
+/* selectores compuestos -> + > ~ ,*/
+li>ul{
+    border: 2px solid gold;
+}
+.grupo1>li{
+    background-color: yellowgreen;
+}
+h1+h2{
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+/*selectores por atributo */
+
+/*
+selector[atributo="valor"]
+*/
+input[type="text"]{
+    background-color: pink;
+}
+img[alt="icono avatar"]{
+    width: 50px;
+}

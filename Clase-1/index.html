@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/reset.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <script src="./script.js" defer></script><!-- otra manera de incorporar JS-->
+    <title>Clase -1 </title>
+</head>
+<body>
+<!--semanticas-->
+    <h1>Titulo</h1>
+    <h2>Subtitulo</h2>
+    <p class="grupo1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, vitae.</p>
+    <!--listas : desordenadas(ul) y ordenadas(ol) | item de lista (li)-->
+    <ul class="grupo1">
+        <li>item</li>
+        <li><h3>Titular</h3></li>
+    </ul>
+    <ol>
+        <li>
+            <ul>
+                <li>otra lista</li>
+            </ul>
+        </li> 
+        <li>otro item</li>  
+    </ol>
+
+    <form action="">
+        <input type="text">
+        <input type="password">
+    </form>
+    <!-- funcionales-->
+
+    <a href="./pages/pagina2.html">ir a hoja secundaria</a> <!-- enlace - ancla-->
+    <a href="#nombreId">Ir a una zona de mi HTML</a>
+    <a href="https://www.google.com/">Ir a Google.com</a>
+    <button >Click!</button>
+
+    <img src="./recursos/icono.svg" alt="icono avatar" >
+
+    <!--estructurales -> 'contenedores' : agrupan etiquetas-->
+    <div>
+        <p class="grupo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam sit, quos enim cupiditate tempora amet. Quaerat doloribus qui numquam ex facere odit, laboriosam fuga, consequatur excepturi id quasi, in ipsa!</p>
+        <span></span>
+    </div>
+    <!-- div, span, landmarks(etiquetas de maquetacion): nav |main|section|article|footer|header|aside-->
+    <!---->
+    <h3 id="nombreId">Zona destino....</h3>
+    <nav>
+        <ul>
+            <li>Item menu</li>
+            <li>Item menu</li>
+        </ul>
+    </nav>
+    
+<!-- <script>
+    //codigo js..
+</script> una alternativa de incluir JS (manera o escalable)-->
+<script src="./script.js"></script><!-- otra manera de incorporar JS-->
+</body>
+</html>
+<!-- HTML (Hyper Text Markup Lenguage )
+
+etiquetas <><>
+ -> de apertura y cierre : <etiqueta>contenido..</etiqueta>
+ -> cierran en si mismas : <etiqueta/> || <etiqueta> : img , hr ,input,br
+
+atributos -> informacion que podemos agregar a las etiquetas | propiedades de esas etiquetas
+    - se escriben dentro de la etiqueta de apertura(etiquetas de apertura y cierre)
+    - atributo="valor"
+clasificacion -> semanticas- funcionales- estructurales 
+
+    -->
+<!-- ruteos
+ pasaje relativo : donde nos encontramos? de donde partimos?
+
+ "./restoRuteo" || "/restoRuteo" || "restoRuteo" -> archivos/carpetas que se encuentran a la misma altura que el documento que parto
+ '../restoRuteo' -> para "salir" de la carpeta actual 
+-->
+<!-- accesibilidad -> practicas para que cualquier tipo de persona que navegue por el sitio tenga una buena experiencia 
+ atributos aria 
+ --> 
+<!-- CSS -> estilo del sitio 
+ Para incluirlo: 
+    por medio del atributo style| 
+    por medio de la etiqueta <style>| 
+    por medio de un archivo externo 
+
+-->

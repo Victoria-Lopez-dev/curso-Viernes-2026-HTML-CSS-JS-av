@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase - 2</title>
+</head>
+<body>
+    <h1>Audio y Video</h1>
+    <button>Click</button>
+
+    <div class="contenedor-video">
+        <video loop  poster="./assets/bosque.jpg">
+            <source src="./assets/videos/video2.mp4" type="video/mp4">
+            <source src="./assets/videos/video2.ogv" type="video/ogv">
+        </video> 
+
+        <div class="barra-reprduccion">
+            <div>
+                <button id="play">PLAY</button>
+                <button id="pause">PAUSE</button>
+                <button id="muted">SONIDO <span>ON</span></button>                
+            </div>
+            <div>
+                <p>Duracion <span id="tiempo">00:00</span></p>
+                <p>Tiempo actual <span id="actual">00:00</span></p>
+            </div>
+        </div>        
+        
+    </div>
+
+
+    <audio src="./assets/aves.mp3" controls></audio>
+
+    <!-- <script src="./repaso.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- atributos audio/video
+- controls -> barra de reproduccion predeterminada (distinto el estilo en cada browser)
+- loop -> hacer que se reproduzca de forma infinita (hasta que se cierre el sitio)
+
+- autoplay -> reproducir apenas se carga 
+
+-poster -> imagen previa al inicio de la reproduccion ( no convive con el autoplay)
+
+-->

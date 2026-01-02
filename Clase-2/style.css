@@ -1,0 +1,27 @@
+ *{
+    box-sizing: border-box;
+}
+video {
+    width:100%;
+    display: block;
+
+}
+.contenedor-video{
+    width: 600px;
+}
+.barra-reprduccion{
+    padding: 20px 10px;
+    background-color: darkcyan;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-reprduccion>div>button{
+    padding: 5px;
+    background-color: orange;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}

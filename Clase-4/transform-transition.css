@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .padre{
@@ -10,12 +11,83 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    perspective: 800px;
+    /* definimos perspective en el elemento padre*/
+    margin-bottom: 200px;
 }
 .contendor{
     width: 200px;
     box-shadow: 2px 2px  4px #333333;
     background-color: beige;
+    font-size: 18px;
 }
 img{
     width: 100%;
 }
+.translate:hover,.translate:focus{
+    transform: translateZ(-100px) translateX(100px);
+    /* transform: translate(10px,200px); */
+/*    - translate(x,y)-translateX()-translateY()-translateZ()-translate3d(x,y,z)
+unidades de distancia (ejemplo: px)
+*/
+    font-weight: bolder;
+    color: darkred;
+    transition-property:transform ,color;
+    transition-duration: 2s,3s;
+    transition-timing-function: cubic-bezier(1,.55,.03,.98);
+}
+.rotate{
+    transition:transform 0.5s;
+    transform: rotateX(50deg);
+}
+.rotate:active{
+    transform: rotateZ(-45deg) ;
+    /*- rotate(z)-rotateX()-rotateY()-rotateZ()
+     unidad de grados (degree - deg)
+     valores positivos -> gira hacia la derecha
+     valores negativos -> girar hacia la izq
+*/
+}
+.scale{
+    transform:scale(2,0.4)
+    /* scaleX() - scaleY() -scaleZ() -scale(x,y)
+    unidad -> numero sin unidad
+    */
+}
+.skew{
+    transform: skewX(45deg) skewY(20deg);
+    /* skewX() - skewY() -skew(x,y)
+    unidad -> grados (deg)
+    */
+}
+.combinado:hover{
+    transform: rotateY(40deg) translateZ(100px) scale(1.7);
+    transition: transform 2s;
+}
+/*
+    transform -> transformar un elemento  
+    valores de transform:
+    -rotate
+    -scale
+    -skew  
+*/
+/*
+transition-> generar una transicion entre un estado inicial y final de un selector/ genera un cambio progresivo
+- transition se puede colocar tanto en el selector como en la definicion de su pseudoclase
+
+unidad de tiempo -> segundos (s) | milisegundos (ms)
+*/
+/*
+perspective -> definir una perspectiva, punto de origen para a partir de ello ubicar en esa 3 dimencion el elemento
+perspective -> elemento padre .
+unidades de distancia para establecer en donde esta el plano/ a que "distancia" esta el elemento padre de la pantalla
+*/
+/*
+    pseudoclases -> agregados a los selectores para darle una pequeña interaccion de estilos ante algunas acciones por parte del usuario
+
+    sintaxis:
+
+    selector:pseudoclase{
+    ....
+    }
+*/

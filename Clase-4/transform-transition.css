@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.contendor{
+    width: 200px;
+    box-shadow: 2px 2px  4px #333333;
+    background-color: beige;
+}
+img{
+    width: 100%;
+}

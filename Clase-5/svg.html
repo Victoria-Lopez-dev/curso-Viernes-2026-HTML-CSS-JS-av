@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase - 5</title>
+</head>
+<body>
+    <header>
+        <h1>Usando SVG</h1>        
+    </header>
+
+    <img src="./images/undraw_focused-dev_gqoa.svg" alt="">
+    <svg>
+        <rect 
+            x="500" 
+            y="100" 
+            width="200" 
+            height="144"
+            fill="#ff44ee"
+            stroke="rgb(22,100,222)"
+            stroke-width="3"
+            rx="5"
+        ></rect>
+        <circle
+            cx="100"
+            cy="322"
+            r="80"
+            stroke="#f90"
+            stroke-width="5"
+            fill="transparent"
+        ></circle>
+        <ellipse
+            id="el1"
+            cx="200"
+            cy="122"
+            rx="40"
+            ry="70"
+            fill="green"
+        ></ellipse>
+        <line
+            x1="0"
+            y1="0"
+            x2="300"
+            y2="177"
+            stroke="blue"
+            stroke-width="4"
+        ></line>
+        <polyline
+            points="111 3,200 1,111 300,200 200,500 33"
+            stroke="brown"
+            stroke-width="4"
+            fill="none"
+        ></polyline>
+        <polygon
+            points="440 300,500 290,550 100"
+            stroke="darkgreen"
+            stroke-width="4"
+            fill="#f90"
+        ></polygon>
+    </svg>
+    <svg id="corazon">
+        <circle
+            cx="270"
+            cy="200"
+            fill="pink"
+            r="40"
+        ></circle>
+        <circle
+            cx="330"
+            cy="200"
+            fill="pink"
+            r="40"
+        ></circle>
+        <polygon
+            points="235 220,300 290,365 220"
+            fill="pink"
+        ></polygon>
+    </svg>
+</body>
+</html>
+<!-- SVG 
+ - formato de imagenes
+- util para graficos/iconos/etc
+-livianos y utiliza como figuras primitivas: figuras geometricas
+
+rect
+circle
+ellipse
+line
+polyline
+polygon
+
+-->
+<!--
+atributos:
+    * rect:
+        x -> coordenada horizontal
+        y ->coordenada vertical
+        width
+        height
+        fill-> color del relleno
+        stroke -> color del contorno
+        stroke-width-> ancho del contorno
+        rx-> redondeo de los bordes(sin unidad o %)
+
+    * circle:
+        fill| stroke| stroke-width
+        cx -> coordineada eje X del centro de la circunferencia
+        cy -> coordinada eje Y del centro de la circunferencia
+        r -> radio 
+
+    * ellipse:
+        fill| stroke| stroke-width|cx|cy
+        rx -> radio horizontal
+        ry -> radio vertical
+
+    * line:
+        stroke| stroke-width
+        x1 - y1 -> coordenada del punto inicial
+        x2-y2 -> coordinada del punto final
+
+    * polyline:
+        fill| stroke| stroke-width
+        points-> pares de coordenadas x e y(separadas por un espacio entre si) ,separadas cada par por coma simple (,) donde va a ir uniendo cada uno de esos puntos 
+
+      * polygon:
+        points|fill| stroke| stroke-width
+
+ animacion ->
+-->

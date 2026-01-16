@@ -1,0 +1,57 @@
+:root{
+    --color1:#ff20a0;
+    --colorTransparencia:#ff20a044;
+}
+header{
+    background: url(../images/tool-used-coffee-machine-coffee-making-process.jpg);
+    background-size: cover;
+}
+h1{
+    color: var(--color1);
+    background-color: var(--colorTransparencia);
+    width: 100%;
+}
+svg{
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+    display: block;
+}
+canvas{
+    border: 3px solid blue;
+    height: 300px;
+    background-color: rgb(144, 211, 238);
+}
+img{
+    width: 300px;
+}
+rect:hover{
+    transform: translate(-200px);
+    transition: transform 2s;
+}
+
+#el1{
+    animation:mover 6s 1;
+}
+#corazon{
+    border: none;
+   animation: latir 4s 3 alternate;
+}
+
+@keyframes mover {
+    from{
+        fill:cadetblue;
+    }
+    to{
+        stroke:blueviolet;
+        transform:rotate(45deg) translate(100px)
+    }
+}
+@keyframes latir {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+         transform: scale(2);
+    }
+}

@@ -1,10 +1,9 @@
 ## en esta clase
  - gitHub: como agrego un colaborador a un repositorio privado
- - tablero en VSCode de git
-  - que es una API
- - API CANVAS
- - SVG y animacion
+ - API Geolocalizacion 
+ - API Drag and Drop
 
  ## proxima clase 
  - banches en git ?
- - API Geolocalizacion + Drag and Drop
+ - tablero en VSCode de git
+ - Web Storage - mini ejercicio

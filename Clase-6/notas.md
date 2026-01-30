@@ -6,4 +6,4 @@
  ## proxima clase 
  - banches en git ?
  - tablero en VSCode de git
- - Web Storage - mini ejercicio
+ - Web Storage - mini ejercicio - ideas para incorporar al proyecto final 

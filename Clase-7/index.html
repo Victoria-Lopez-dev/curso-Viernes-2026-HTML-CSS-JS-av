@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>localStorage-sessionStorage</title>
 </head>
-<body >
+<body onload="temaDefinido()">
     
     <header>
         <img class="logo" src="./imagenes/logo.svg" alt="logo" >
@@ -34,7 +34,7 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <button class="boton-compra" onclick="sumarProducto(this)" >comprar</button>
                 
             </div>
 
@@ -43,7 +43,7 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <button class="boton-compra" onclick="sumarProducto(this)" >comprar</button>
             
             </div>   
             <div class="card">
@@ -51,7 +51,7 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <button class="boton-compra" onclick="sumarProducto(this)" >comprar</button>
             
             </div>        
         </section>
